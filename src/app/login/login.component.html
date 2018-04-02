@@ -1,0 +1,46 @@
+<div>
+<header class="main-header" style="background-color:rgb(9, 9, 58);">
+
+  <!-- Logo -->
+  <a href="#" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini"><b>S</b></span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg"><b>Sofkul</b></span>
+  </a>
+
+  <!-- Header Navbar -->
+  <nav class="navbar navbar-static-top" role="navigation">
+    <!-- Sidebar toggle button
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>-->
+    <!-- Navbar Right Menu -->
+    <div class="navbar-custom-menu">
+      
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div style="margin-top:15px;"><flash-messages></flash-messages></div>  
+  <h2 class="page-header" >Login</h2>
+  <form class="form-signin" (submit)="onLoginSubmit()">
+          <div class="form-group">
+            <label for="Username">Username</label>
+            <input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username">
+          </div>
+          <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" placeholder=" Enter Password" [(ngModel)]="password" name="password">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <input class="btn btn-lg btn-primary" type="submit" value="Login">
+  </form>
+  
+</div>
+</div>
